@@ -1,0 +1,417 @@
+@import "bootstrap/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+
+// base
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.card-style {
+  box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  border: none;
+}
+
+// RWD-carousal
+
+@media (max-width: 960px) {
+  .lg-screen {
+    display: none;
+  }
+  .sm-screen {
+    display: inherit;
+  }
+}
+
+@media (min-width: 960px) {
+  .lg-screen {
+    display: inherit;
+  }
+  .sm-screen {
+    display: none;
+  }
+}
+
+// RWD-section 3
+
+@media (max-width: 960px) {
+  .sect-3_lg-screen {
+    display: none;
+  }
+  .sect-3_sm-screen {
+    display: flex;
+  }
+}
+
+@media (min-width: 960px) {
+  .sect-3_lg-screen {
+    display: flex;
+  }
+  .sect-3_sm-screen {
+    display: none;
+  }
+}
+
+// rewrite-bootstrap
+
+.container {
+  max-width: calc(100% - 8%);
+}
+
+nav {
+  .navbar-brand {
+    padding: 0;
+    margin: 0;
+  }
+  .btn {
+    line-height: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #fff;
+    border: none;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.navbar {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+// bg
+.bg_hero-yellow {
+  img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 850px;
+    height: 768px;
+  }
+}
+
+@media (max-width: 425px) {
+  .bg_hero-yellow {
+    display: none;
+  }
+}
+
+.bg_hero-sm-yellow {
+  position: absolute;
+  top: 480px;
+  overflow: hidden;
+  img {
+    width: 80%;
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bg_hero-sm-yellow {
+    display: none;
+  }
+}
+
+.bg_hero-blue {
+  img {
+    position: absolute;
+    top: 589px;
+    left: -222px;
+    width: 360px;
+  }
+}
+
+@media (max-width: 425px) {
+  .bg_hero-blue {
+    img {
+      top: 720px;
+      left: -77px;
+      width: 126px;
+    }
+  }
+}
+
+.bg_hero-lightBlue {
+  position: absolute;
+  top: 1694px;
+  right: 0px;
+  overflow: hidden;
+  width: 210px;
+  img {
+    width: 310px;
+  }
+}
+
+.bg_hero-lightYellow {
+  position: absolute;
+  top: 2640px;
+  left: 50px;
+  overflow: hidden;
+  width: 150px;
+  img {
+    width: 150px;
+  }
+}
+
+// nav
+
+nav {
+  margin-bottom: 30px;
+  a {
+    display: block;
+    img {
+      height: 40px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  nav {
+    border-bottom: 2px solid #ffd153;
+    .btn {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    a {
+      img {
+        height: 24px;
+      }
+    }
+  }
+}
+
+//hero
+
+.hero {
+  position: relative;
+  margin-bottom: 217px;
+
+  .hero_name {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+  }
+
+  .hero_title {
+    font-size: 3rem;
+    line-height: 70px;
+    font-weight: 700;
+  }
+
+  .hero_caption {
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 400;
+  }
+
+  .hero_image img {
+    width: 100%;
+  }
+}
+
+// section 1
+
+.sec-1 {
+  position: relative;
+  margin-bottom: 100px;
+
+  .sec-1_headline {
+    line-height: 46px;
+    color: #221e1f;
+  }
+
+  img {
+    height: 90px;
+    width: 90px;
+  }
+
+  .sec-1_title {
+    font-size: 1.5rem;
+    line-height: 35px;
+    color: #221e1f;
+  }
+
+  .sec-1_caption {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #747474;
+  }
+}
+
+// section 2
+
+.sec-2 {
+  position: relative;
+  margin-bottom: 100px;
+
+  .sec-2_headline {
+    line-height: 46px;
+    color: #221e1f;
+  }
+
+  .sec-2_subline {
+    font-size: 20px;
+    line-height: 29px;
+    color: #221e1f;
+  }
+
+  h5 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #221e1f;
+  }
+}
+
+// section 3
+
+.sec-3 {
+  position: relative;
+  margin-bottom: 100px;
+
+  .sec-3_headline {
+    line-height: 46px;
+    color: #221e1f;
+  }
+
+  .sec-3_subline {
+    font-size: 20px;
+    line-height: 29px;
+    color: #221e1f;
+  }
+
+  .sec-3_img {
+    height: 82px;
+    width: 82px;
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  .btn {
+    margin: auto;
+  }
+}
+
+.wrapper {
+  width: 72%;
+  margin: 20% auto;
+}
+
+// section 4
+
+.sec-4 {
+  position: relative;
+  margin-bottom: 100px;
+
+  .sec-4_headline {
+    line-height: 46px;
+    color: #221e1f;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #221e1f;
+  }
+}
+
+.carousel {
+  .carousel-indicators {
+    button {
+      height: 10px;
+      width: 10px;
+      background-color: #dddddd;
+      opacity: 1;
+    }
+  }
+}
+
+.carousel {
+  .carousel-indicators {
+    .active {
+      height: 10px;
+      width: 16px;
+      background-color: #ffd153;
+    }
+  }
+}
+
+.user-image {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: -56px;
+}
+
+.user-info {
+  border-top: 2px solid #00000014;
+}
+
+// footer
+
+.footer_bg {
+  position: relative;
+  margin-bottom: 100px;
+
+  img {
+    width: 100%;
+  }
+
+  span {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 46px;
+    color: #221e1f;
+  }
+
+  .btn {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 6rem;
+  }
+}
+
+.copy {
+  background-color: #f5f5f5;
+  color: #221e1f;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+//back to top
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 24px; /* Place the button at the bottom of the page */
+  right: 32px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 1rem; /* Some padding */
+  border-radius: 100%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  opacity: 1;
+}
+
+@media (max-width: 425px) {
+  #myBtn {
+    bottom: 1.5rem; /* Place the button at the bottom of the page */
+    right: 1rem; /* Place the button 30px from the right */
+  }
+}
