@@ -12560,7 +12560,7 @@ nav .btn:hover {
   height: 768px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 560px) {
   .bg_hero-yellow {
     display: none;
   }
@@ -12575,7 +12575,7 @@ nav .btn:hover {
   padding-left: 60px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .bg_hero-sm-yellow {
     display: none;
   }
@@ -12587,7 +12587,7 @@ nav .btn:hover {
   width: 360px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 560px) {
   .bg_hero-blue img {
     top: 720px;
     left: -77px;
@@ -12626,7 +12626,7 @@ nav a img {
   height: 40px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 560px) {
   nav {
     border-bottom: 2px solid #ffd153;
   }
