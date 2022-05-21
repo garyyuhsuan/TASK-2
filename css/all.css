@@ -12506,7 +12506,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 960px) {
+@media (max-width: 990px) {
   .sect-3_lg-screen {
     display: none;
   }
@@ -12517,7 +12517,7 @@ body {
     display: flex;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 990px) {
   .sect-3_lg-screen {
     display: -webkit-box;
     display: -ms-flexbox;

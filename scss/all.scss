@@ -35,7 +35,7 @@ body {
 
 // RWD-section 3
 
-@media (max-width: 960px) {
+@media (max-width: 990px) {
   .sect-3_lg-screen {
     display: none;
   }
@@ -44,7 +44,7 @@ body {
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 990px) {
   .sect-3_lg-screen {
     display: flex;
   }
