@@ -16,13 +16,16 @@
   padding: $nav-link-padding-y $nav-link-padding-x;
   @include font-size($nav-link-font-size);
   font-weight: $nav-link-font-weight;
-  color: $nav-link-color;
   text-decoration: if($link-decoration == none, null, none);
   @include transition($nav-link-transition);
 
+  //cutomized
+  color: $info;
+  outline: 1px solid $info;
+
   &:hover,
   &:focus {
-    color: $nav-link-hover-color;
+    color: $info;
     text-decoration: if($link-hover-decoration == underline, none, null);
   }
 
@@ -63,9 +66,11 @@
 
   .nav-link.active,
   .nav-item.show .nav-link {
-    color: $nav-tabs-link-active-color;
-    background-color: $nav-tabs-link-active-bg;
     border-color: $nav-tabs-link-active-border-color;
+
+    //cutomized
+    color: $info;
+    background-color: $info;
   }
 
   .dropdown-menu {
@@ -75,7 +80,6 @@
     @include border-top-radius(0);
   }
 }
-
 
 //
 // Pills
@@ -90,11 +94,12 @@
 
   .nav-link.active,
   .show > .nav-link {
-    color: $nav-pills-link-active-color;
-    @include gradient-bg($nav-pills-link-active-bg);
+    //cutomized
+    background-color: $info;
+    color: white;
+    // @include gradient-bg($nav-pills-link-active-bg);
   }
 }
-
 
 //
 // Justified variants
@@ -123,7 +128,6 @@
     width: 100%; // Make sure button will grow
   }
 }
-
 
 // Tabbable tabs
 //

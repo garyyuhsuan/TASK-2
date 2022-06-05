@@ -4318,10 +4318,11 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
   text-decoration: none;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  color: #56c4c5;
+  outline: 1px solid #56c4c5;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
@@ -4330,7 +4331,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #0a58ca;
+  color: #56c4c5;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -4359,9 +4360,9 @@ textarea.form-control-lg {
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
-  background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
+  color: #56c4c5;
+  background-color: #56c4c5;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -4376,8 +4377,8 @@ textarea.form-control-lg {
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #0d6efd;
+  background-color: #56c4c5;
+  color: white;
 }
 
 .nav-fill > .nav-link,
@@ -5221,13 +5222,13 @@ textarea.form-control-lg {
   }
 }
 .accordion-button:not(.collapsed) {
-  color: #0c63e4;
-  background-color: #e7f1ff;
+  color: #56c4c5;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
 .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_minus.svg);
+  background-position: center;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
@@ -5238,7 +5239,7 @@ textarea.form-control-lg {
   height: 1.25rem;
   margin-left: auto;
   content: "";
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_plus.svg);
   background-repeat: no-repeat;
   background-size: 1.25rem;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
@@ -12568,7 +12569,6 @@ nav .btn:hover {
 .bg_hero-sm-yellow {
   position: absolute;
   top: 480px;
-  overflow: hidden;
 }
 .bg_hero-sm-yellow img {
   width: 80%;
@@ -12580,36 +12580,41 @@ nav .btn:hover {
     display: none;
   }
 }
-.bg_hero-blue img {
+.bg_hero-blue {
   position: absolute;
   top: 589px;
-  left: -222px;
-  width: 360px;
+  left: 0px;
+  height: 360px;
+  width: 138px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg);
+  background-size: 360px 360px;
+  background-position: right;
+  background-repeat: no-repeat;
 }
-
 @media (max-width: 560px) {
-  .bg_hero-blue img {
-    top: 720px;
-    left: -77px;
-    width: 126px;
+  .bg_hero-blue {
+    top: 960px;
+    width: 49px;
+    height: 126px;
+    background-size: 126px 126px;
   }
 }
+
 .bg_hero-lightBlue {
   position: absolute;
   top: 1694px;
   right: 0px;
-  overflow: hidden;
   width: 210px;
-}
-.bg_hero-lightBlue img {
-  width: 310px;
+  height: 310px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg);
+  background-size: 310px 310px;
+  background-repeat: no-repeat;
 }
 
 .bg_hero-lightYellow {
   position: absolute;
   top: 2640px;
   left: 50px;
-  overflow: hidden;
   width: 150px;
 }
 .bg_hero-lightYellow img {
@@ -12842,4 +12847,81 @@ nav a img {
     right: 1rem;
     /* Place the button 30px from the right */
   }
+}
+.banner_pay-lg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 560px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg);
+  background-position: top right;
+  background-size: 65vw;
+  background-repeat: no-repeat;
+}
+@media (max-width: 576px) {
+  .banner_pay-lg {
+    height: 1200px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg);
+    background-size: 100vw;
+  }
+}
+@media (max-width: 425px) {
+  .banner_pay-lg {
+    height: 960px;
+  }
+}
+
+.bg_grayBlue {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 480px;
+  border-radius: 0 0 0 300px;
+  background-color: #f7f9fd;
+}
+
+.bg_yellowball {
+  position: absolute;
+  top: 876px;
+  left: -90px;
+  width: 180px;
+  height: 361px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.overflow_x-scroll {
+  overflow-x: scroll;
+}
+
+.line {
+  background-color: #00000014;
+  height: 2px;
+  width: 100%;
+}
+
+.pay-detail {
+  background-color: #f5f5f5;
+  width: 44%;
+}
+
+.equal {
+  margin: 10% 0;
+  width: 12%;
+}
+
+.check {
+  height: 1rem !important;
+  width: 1rem !important;
+  vertical-align: middle;
+}
+
+.text_color-gray {
+  color: #747474;
+}
+
+.text_color-dark {
+  color: #221e1f;
 }
